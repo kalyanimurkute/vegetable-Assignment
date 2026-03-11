@@ -2,7 +2,7 @@
 import IcoFresh from "../assets/features/fresh.png";
 import IcoVariety from "../assets/features/variety.png";
 import IcoDelivery from "../assets/features/delivery.png";
-
+import IconFarming from "../assets/features/farming.png";
 function FeatureCard({ title, description, imgsrc }) {
   return (
     <div className="bg-white p-5 m-4 w-[220px] rounded-xl shadow-md cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center">
@@ -40,6 +40,11 @@ const FEATURES_CONFIG = [
   title: 'Convenient Delivery',
   description: 'Enjoy the convenience of having fresh vegetables delivered right to your doorstep, saving you time and effort.',
   imgsrc : IcoDelivery, 
+},
+{
+  title: 'Sustainable Farming',
+  description:'Sustainable farming is growing food while protecting the environment for future generations.',
+  imgsrc : IconFarming,
 }
 
 ];

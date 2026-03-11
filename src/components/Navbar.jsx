@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className="sticky top-4 max-w-7/12 bg-[#F39F9F] mx-auto px-6 py-3 rounded-full flex items-center shadow-md">
 
-      <SaladIcon className="mr-2 w-7 h-7 text-green-700" />
+      <SaladIcon className="mr-2 w-8 h-8 " />
 
       <h4 className="text-lg font-semibold text-gray-800">
         NatureCart
