@@ -1,8 +1,10 @@
 import React from 'react'
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
+import Button from '../components/Button.jsx';
 import FeatureSection from '../components/FeatureSection.jsx';
 import Image from '../assets/vegetable-img.png';
+
 function Home() {
   return (
     <div>
@@ -13,6 +15,7 @@ function Home() {
         <img src={Image} alt="Vegetable Background" className="h-[300px]" />
         <div>
         <h6 className='text-[40px]! font-bold text-center md:text-[50px]! text-[#B95E82]' >one the platform for all <br />the vegetable you need.</h6>
+        <Button title={"call us"} />
       </div>
       </div>
       <FeatureSection />
