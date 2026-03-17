@@ -3,7 +3,7 @@ import { Salad as SaladIcon } from 'lucide-react'
 
 function Navbar() {
   return (
-    <div className="sticky top-4 max-w-7/12 bg-[#F39F9F] mx-auto px-6 py-3 rounded-full flex items-center shadow-md">
+    <div className="sticky top-4 max-w-7/12 bg-[#F39F9F] mx-auto px-6 py-3 rounded-full flex items-center shadow-md z-50">
 
       <SaladIcon className="mr-2 w-8 h-8 " />
 

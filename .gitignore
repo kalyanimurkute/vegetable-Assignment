@@ -23,4 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-key.txt 38.29
+
+*.data.json 12:54
