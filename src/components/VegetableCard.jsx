@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Button from "./Button";
 import {CircleMinus, CirclePlus } from "lucide-react"
+import toast, {Toaster} from "react-hot-toast";
+ 
 function VegetableCard({
   id,
   name,
@@ -36,18 +38,26 @@ function VegetableCard({
     
     <div  className="flex justify-center item-center my-4 gap-4">
       <CirclePlus  className=" cursor-pointer" onClick={()=>{
-        setQuantity(quantity + 1);
+       if(quantity <10) {setQuantity(quantity + 1);}
+       else {
+        toast.error("quantity  cannot be more than 10");
+       }
       }}/>
-      <label className="text-2xl">
+      <label className="text-2xl ">
         {quantity}
       </label>
       <CircleMinus  className="cursor-pointer" onClick={()=>{
-        setQuantity(quantity - 1);
+       if (quantity > 1 ) 
+        {setQuantity(quantity - 1);}
+       else {
+         toast.error("quantity cannot be less than 1");
+       }
       }}/>
     </div>
     <div className="flex justify-center">
     <Button title="Add To Cart"/>
     </div>
+    < Toaster />
     </div>
   );
 }
