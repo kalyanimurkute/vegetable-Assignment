@@ -10,7 +10,7 @@ function Vegetables() {
 
       <div className='min-h-screen mt-20 p-4'>
         <h1 className='text-3xl font-bold text-center mb-6'>
-          Fresh Vegetables
+          Fresh Vegetables, fruits 
         </h1>
 
         <div className='flex flex-wrap justify-center'>
