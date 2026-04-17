@@ -21,7 +21,9 @@ function Home() {
             <Button title={"Explore Now"} onclick={()=>{
               navigate("/Vegetables");
             }} variant='primary' size='medium' />
-            <Button title={"call us"} variant='tertiary' size='medium' />
+            <Button title={"call us"} onclick ={()=>{
+              navigate("/CallUs");
+            }}variant='tertiary' size='medium' />
           </div>
           </div>
         </div>
