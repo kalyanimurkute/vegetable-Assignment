@@ -51,7 +51,7 @@ function MyCart() {
                 <div className='max-h-[700px] py-4 overflow-y-scroll'>
 
                     {cartItems.length === 0 ? (
-                        <h2 className='text-center mt-20 text-2xl text-gray-500'>
+                        <h2 className='text-center mt-20 text-2xl text-black'>
                             Your Cart is Empty 🛒
                         </h2>
                     ) : (

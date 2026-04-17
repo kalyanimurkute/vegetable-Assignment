@@ -16,7 +16,7 @@ function VegetableCard({
   const [quantity, setQuantity] = useState(1);
 
   const handleAddToCart = () => {
-    console.log("Add to cart clicked for:", name, "Quantity:", quantity); // ✅ debug
+    console.log("Add to cart clicked for:", name, "Quantity:", quantity); 
 
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -41,17 +41,16 @@ function VegetableCard({
 
     toast.success(`✅ Added ${quantity} ${name} to cart!`);
 
-    // Reset quantity
     setQuantity(1);
 
-    // update navbar
+   
     window.dispatchEvent(new Event("cartUpdated"));
   };
 
   return (
     <div
       className="border border-solid border-slate-500 bg-white m-4 p-4 w-90 rounded-lg shadow-md"
-      key={id}  // ✅ fixed
+      key={id}  
     >
       <div className="relative">
         <img
